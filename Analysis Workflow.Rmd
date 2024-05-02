@@ -12,17 +12,17 @@ knitr::opts_chunk$set(echo = TRUE)
 #install.packages("gtable")
 #install.packages("gtsummary")
 #install.packages("flextable")
-library(rstatix)
-library(tidyverse)
-library(correlation)
-library(gtable) # Allows for custom tidy tables, which render to Latex, word, pdf, html
-library(gt)
-library(psych)
-library(gtsummary) # Has ready made tables for summary stats
-library(flextable) # Converts regression tables to pretty publication tables
-library(jtools) # Useful for generating APA ready plots
-library(kableExtra)
 
+library(tidyverse) # data tidying
+library(correlation) # prepares nice correla
+library(gtable) # Allows for custom tidy tables, which render to Latex, word, pdf, html
+library(gt) # More control on making tables
+library(psych) # Useful packages for working with psychometrics and making summary tables
+library(rstatix) # Useful tools for working statistical analyses
+library(gtsummary) # Has ready made tables for summary stats
+library(flextable) # Converts regression tables to pretty publication tables. May not work on Mac.
+library(jtools) # Useful for generating APA ready plots
+library(modelsummary) # Mac friendly alternative for regression tables. 
 ```
 
 Before cracking on with the second part of today's session, we are going to quickly learn about how R can be used to render documents. This is done using the `Knit` button. To tidy our end document, we will also use some extra commands in our code chunks. The `echo=FALSE` is used to prevent our code from being rendered. Meanwhile, `message = FALSE` is used to prevent any warning messages from being rendered.
@@ -204,31 +204,45 @@ Please note that the correlation matrix is left with redundant values. This is t
 
 ```{r, echo = FALSE, message = FALSE}
 # Setting the model
-model <- lm(depression ~ group + eventsscore + SOsupport, df_tidy)
-
+model <- lm(scale(depression) ~ group + scale(eventsscore) + scale(SOsupport), df_tidy)
+## Wrapping variables in scale() to get standardised Beta's. Remove the scale() if regular coefficents are needed.
 ```
 
 ### Raw results
 
-```{r, echo = FALSE, message = FALSE}
+```{r, echo = FALSE}
 # Ugly (but useful) results 
-summary(model)
-tidy(model)
-glance(model)
+#summary(model)
+regression_coef <- tidy(model)
+
+regression_model_fit <- glance(model)
+
+# -   -   SOsupport is a significantly and negatively associated with Depression ($\beta$ = `r round(regression_coef) %>% filter(term == "SOsupport)") %>% select(estimate), 2)`, *p* = `r round(regression_coef %>% filter(term == "SOsupport") %>% select(p.value), 2)`).
+# -   SOsupport is a significantly and negatively associated with Depression ($\beta$ = `r round(regression_coef %>% filter(term == "SOsupport") %>% select(estimate), 2)`, *p* = `r round(regression_coef %>% filter(term == "SOsupport") %>% select(p.value), 2)`).
 ```
+
+We can also extract our regression analysis into text, by using the `broom` package to extract our model summary data. We use the `tidy()` function to extract the coefficent values. And we use the `glance()` to extract the model fit statistics. This is very useful to save time! But can look intimidating. The best tip is to test the code in the code boxes, then copy and paste it into the in-line code. Below are some examples of the model results:
+
+-   SOsupport is a significantly and negatively associated with Depression ($\beta$ = `r round(regression_coef %>% filter(term == "scale(SOsupport)") %>% select(estimate), 2)`, *p* = `r round(regression_coef %>% filter(term == "scale(SOsupport)") %>% select(p.value), 3)`).
+-   Model fit is significant (*F* (`r regression_model_fit$df`, `r regression_model_fit$df.residual`) = `r round(regression_model_fit$statistic, 2)`, *p* = `r  plyr::round_any(regression_model_fit$p.value , .001, ceiling)`), with `r round(regression_model_fit$adj.r.squared * 100, 2)`% of model variance explained by the $R^2_{adj}$ .
 
 ### Publication ready(er) results
 
 I have recently discovered the `flextable` package, and it is amazing! It will convert your model into a publication ready format in word with minimal effort. Simply take your defined model, and wrap it in the `as_flextable()` function. More information on `flextable` can be found [here](https://ardata-fr.github.io/flextable-book/index.html).
 
-For mac-users, there appear to be some headaches with the `flextable` package. So here's a mac-friendly version that makes use of the `jtools` and `huxtable` pacakges.
+For mac-users, there appear to be some headaches with the `flextable` package. So here's a mac-friendly version that makes use of the `modelsummary` package. More information on using the modelsummary  [website](https://modelsummary.com/vignettes/modelsummary.html).
 
 ```{r, echo = FALSE, message = FALSE}
 # Pretty results 
-flextable::as_flextable(model) # this approach may not work for mac users
-mac <- summ(model) 
-kable(mac$coeftable)
-kable(mac$model)
+flextable::as_flextable(model) # this approach may not work for mac users. Comment it out if it misbehaves.
+
+modelsummary(model,
+             shape = term ~ model + statistic , # allows for nicer table format
+             statistic = c('std.error', "p.value"), #include the desired summary statistics
+             gof_omit = "AIC|BIC|Log.Lik.|RMSE", # remove unwanted model fit statistics
+             output = "gt") # choose printing style
+
+
 ```
 
 ### Publication ready plot
@@ -238,7 +252,7 @@ And what use is a fancy table without a fancier plot?! APA guidelines are a litt
 ```{r, echo = FALSE, message = FALSE}
 #Generating plot
  plot <- ggplot(df_tidy,
-                aes(x = eventsscore, y = depression, col = group)
+                aes(x = SOsupport, y = depression, col = group)
                 ) +
   geom_point(alpha = .7, position = "jitter")+
   geom_smooth(method = "lm", se = FALSE) 
@@ -246,7 +260,7 @@ And what use is a fancy table without a fancier plot?! APA guidelines are a litt
 
 #Adding labels and APA theme
   plot +
-    labs(x = "Exposure to stressful life events",
+    labs(x = "Support from significant others",
          y = "Depression score (DASS)",
          col = "Condition") +
      theme_apa(legend.pos = "right", 
