@@ -6,7 +6,7 @@
 
 **R** you curious about programming? **R** you interested in building your researcher toolbox with highly transferable skills? **R** you looking for free coffee, tea and sandwiches?!   
 
-Look no further! Research Bow is hosting a full day programming workshop for the PGR’s of sHiSS. The workshop will provide an applied overview on using R as a researcher. This will cover navigating R, learning how to tidy and explore our data in R, conducting and reporting our analyses in R (APA format ready 😉), and learning tips on how to overcome the intimidating aspects of programming. All of this will be covered within our sHiSS community, where we aim to create a fun and supportive environment as we dip our toes into using programming in research.  
+Look no further! _**Research Bow**_ is hosting a full day programming workshop for the PGR’s of sHiSS. The workshop will provide an applied overview on using R as a researcher. This will cover navigating R, learning how to tidy and explore our data in R, conducting and reporting our analyses in R (APA format ready 😉), and learning tips on how to overcome the intimidating aspects of programming. All of this will be covered within our sHiSS community, where we aim to create a fun and supportive environment as we dip our toes into using programming in research.  
 
 ### Workshop aims: 
 
@@ -22,23 +22,23 @@ Look no further! Research Bow is hosting a full day programming workshop for the
 
 ### Workshop schedule: 
 
-10:00 – 11:00: Meet up, setting up, and navigating R. 
+**10:00 – 11:00**: Meet up, setting up, and navigating R. 
 
-11:00 – 11:15: short break/Q+A. 
+**11:00 – 11:15**: short break/Q+A. 
 
-11:15 – 12:45: Data tidying workflow guide through (allowing more time as this is the most important stage). 
+**11:15 – 12:45**: Data tidying workflow guide through (allowing more time as this is the most important stage). 
 
-12:45 - 14:00 : Lunch break 
+**12:45 - 14:00** : Lunch break 
 
-14:00 – 14:15 : Q+A and consolidation of data tidying workflow 
+**14:00 – 14:15** : Q+A and consolidation of data tidying workflow 
 
-14:15 – 15:15 : Analysis worksheet walkthrough 
+**14:15 – 15:15** : Analysis worksheet walkthrough 
 
-15:15 – 15:30 : short break/Q+A 
+**15:15 – 15:30** : short break/Q+A 
 
-15:30 – 16:30 : Create own data tidying/data analysis document (using previous material as reference). Can work with own data, or with a provided data set. (Option to work in pairs?) 
+**15:30 – 16:30** : Create own data tidying/data analysis document (using previous material as reference). Can work with own data, or with a provided data set. (Option to work in pairs) 
 
-16:30 – 17:00 : reflections on using R, and wrapping up. 
+**16:30 – 17:00** : reflections on using R, and wrapping up. 
 
 ## Workshop Preparation. 
 
