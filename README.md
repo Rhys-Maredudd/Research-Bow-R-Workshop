@@ -88,5 +88,6 @@ We have two options for using R in the workshop. We can either download and inst
 - Press Create Project Congratulations you have now pulled the content of the repository on your Notable server space.  
 
 
+*note: the materials of this workshop are adapted from the [CDCS: From SPSS to R course](https://github.com/DCS-training/From-SPSS-to-R-How-to-Make-Your-Statistical-Analysis-Reproducible)*
 
-* *note: the materials of this workshop are adapted from the [CDCS: From SPSS to R course](https://github.com/DCS-training/From-SPSS-to-R-How-to-Make-Your-Statistical-Analysis-Reproducible)*
+All material collected here is free to use but is covered by a License: [![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc/4.0/) license.
