@@ -4,7 +4,7 @@
 
 ### PGR workshop for using programming in Research. 
 
-R you curious about programming? R you interested in building your researcher toolbox with highly transferable skills? R you looking for free coffee, tea and sandwiches?!   
+**R** you curious about programming? **R** you interested in building your researcher toolbox with highly transferable skills? **R** you looking for free coffee, tea and sandwiches?!   
 
 Look no further! Research Bow is hosting a full day programming workshop for the PGR’s of sHiSS. The workshop will provide an applied overview on using R as a researcher. This will cover navigating R, learning how to tidy and explore our data in R, conducting and reporting our analyses in R (APA format ready 😉), and learning tips on how to overcome the intimidating aspects of programming. All of this will be covered within our sHiSS community, where we aim to create a fun and supportive environment as we dip our toes into using programming in research.  
 
@@ -81,7 +81,7 @@ We have two options for using R in the workshop. We can either download and inst
 
 - Go to File > New Project> Version Control > Git 
 
-- Copy and Paste this repository URL [DCS-training/From-SPSS-to-R-How-to-Make-Your-Statistical-Analysis-Reproducible: Comfortable/aware of how to run your stats in SPSS? Curious to learn how to run them in R? You've come to the right place. (github.com)](https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main) as the Repository URL (The Project directory name will filled in automatically but you can change it if you want your folder in Notable to have a different name). 
+- Copy and Paste this repository URL [(https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main)](https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main)](https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main) as the Repository URL (The Project directory name will filled in automatically but you can change it if you want your folder in Notable to have a different name). 
 
 - Decide where to locate the folder. By default, it will locate it in your home directory 
 
