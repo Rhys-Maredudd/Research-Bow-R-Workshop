@@ -49,7 +49,7 @@ We have two options for using R in the workshop. We can either download and inst
  
 ### For running R and R studio on your own device: 
 
-- Download R from the following link: The Comprehensive R Archive Network (imperial.ac.uk).  
+- Download R from the following link: [The Comprehensive R Archive Network (imperial.ac.uk)](https://cran.ma.imperial.ac.uk/).  
 
 - Instal the downloaded file to your computer. 
 
@@ -59,7 +59,7 @@ We have two options for using R in the workshop. We can either download and inst
 
 - Open up R-studio, and you’re ready to go! 
 
-- If you want to play around with coding prior to the workshop, here’s some useful Online resources: R programming for ABSOLUTE beginners (youtube.com) ; Tom Mock | A Gentle Introduction to Tidy Statistics in R | RStudio (2019) (youtube.com) ; Essential R to learn for statistics and data science in 2024 - YouTube ; An Introduction to R (intro2r.com).  
+- If you want to play around with coding prior to the workshop, here’s some useful Online resources: [R programming for ABSOLUTE beginners (youtube.com)](https://www.youtube.com/watch?v=QJCt9GNCD1M) ; [Tom Mock | A Gentle Introduction to Tidy Statistics in R | RStudio (2019) (youtube.com)](https://www.youtube.com/watch?v=wfMAaXWHGog) ; [Essential R to learn for statistics and data science in 2024 - YouTube](https://www.youtube.com/watch?v=QJCt9GNCD1M) ; [An Introduction to R (intro2r.com)](https://intro2r.com/index.html).  
 
 ### For running R on noteable 
 
