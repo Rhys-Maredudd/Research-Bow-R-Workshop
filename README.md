@@ -24,21 +24,21 @@ Look no further! _**Research Bow**_ is hosting a full day programming workshop f
 
 **10:00 – 11:00**: Meet up, setting up, and navigating R. 
 
-**11:00 – 11:15**: short break/Q+A. 
+**11:00 – 11:15**: Short break/Q+A. 
 
-**11:15 – 12:45**: Data tidying workflow guide through (allowing more time as this is the most important stage). 
+**11:15 – 12:45**: Data tidying workflow guide through. 
 
-**12:45 - 14:00** : Lunch break 
+**12:45 - 14:00** : Lunch break. 
 
-**14:00 – 14:15** : Q+A and consolidation of data tidying workflow 
+**14:00 – 14:15** : Q+A and consolidation of data tidying workflow. 
 
-**14:15 – 15:15** : Analysis worksheet walkthrough 
+**14:15 – 15:15** : Analysis worksheet walkthrough. 
 
-**15:15 – 15:30** : short break/Q+A 
+**15:15 – 15:30** : Short break/Q+A 
 
-**15:30 – 16:30** : Create own data tidying/data analysis document (using previous material as reference). Can work with own data, or with a provided data set. (Option to work in pairs) 
+**15:30 – 16:30** : Create own data tidying/data analysis document (using previous material as reference). Can work with own data, or with a provided data set. 
 
-**16:30 – 17:00** : reflections on using R, and wrapping up. 
+**16:30 – 17:00** : Reflections on using R, and wrapping up. 
 
 ## Workshop Preparation. 
 
@@ -65,19 +65,9 @@ We have two options for using R in the workshop. We can either download and inst
 
 - Go to https://noteable.edina.ac.uk/login 
 
-- Login with your EASE credentials 
+- Login with your EASE credentials. 
 
-- Select RStudio as a personal notebook server and press start 
-
-- Go to File > New Project> Version Control > Git 
-
-- Copy and Paste this repository URL For R On Noteable 
-
-- Go to https://noteable.edina.ac.uk/login 
-
-- Login with your EASE credentials 
-
-- Select RStudio as a personal notebook server and press start 
+- Select RStudio as a personal notebook server and press start. 
 
 - Go to File > New Project> Version Control > Git 
 
