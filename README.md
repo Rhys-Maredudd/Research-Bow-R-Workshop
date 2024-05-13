@@ -2,11 +2,16 @@
 
 ## R you Ready for R?  
 
+### Where?
+* LLTC_1.16 - Teaching Studio (Lister Learning and Teaching Centre).
+### When?
+* 9:30 t0 17:00 on 3rd of June. 
+
 ### PGR workshop for using programming in Research. 
 
 **R** you curious about programming? **R** you interested in building your researcher toolbox with highly transferable skills? **R** you looking for free coffee, tea and sandwiches?!   
 
-Look no further! _**Research Bow**_ is hosting a full day programming workshop for the PGR’s of sHiSS. The workshop will provide an applied overview on using R as a researcher. This will cover navigating R, learning how to tidy and explore our data in R, conducting and reporting our analyses in R (APA format ready 😉), and learning tips on how to overcome the intimidating aspects of programming. All of this will be covered within our sHiSS community, where we aim to create a fun and supportive environment as we dip our toes into using programming in research.  
+Look no further! _**Research Bow**_ is hosting a full day programming workshop for the PGR’s of HiSS. The workshop will provide an applied overview on using R as a researcher. This will cover navigating R, learning how to tidy and explore our data in R, conducting and reporting our analyses in R (APA format ready 😉), and learning tips on how to overcome the intimidating aspects of programming. All of this will be covered within our HiSS community, where we aim to create a fun and supportive environment as we dip our toes into using programming in research.  
 
 ### Workshop aims: 
 
