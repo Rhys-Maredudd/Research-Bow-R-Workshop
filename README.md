@@ -5,7 +5,7 @@
 ### Where?
 * LLTC_1.16 - Teaching Studio (Lister Learning and Teaching Centre).
 ### When?
-* 9:30 t0 17:00 on 3rd of June. 
+* 9:30 to 17:00 on 3rd of June. 
 
 ### PGR workshop for using programming in Research. 
 
@@ -27,6 +27,8 @@ Look no further! _**Research Bow**_ is hosting a full day programming workshop f
 
 ### Workshop schedule: 
 
+**9:30 - 10:00** : Registration and coffee/tea welcome
+
 **10:00 – 11:00**: Meet up, setting up, and navigating R. 
 
 **11:00 – 11:15**: Short break/Q+A. 
@@ -39,7 +41,7 @@ Look no further! _**Research Bow**_ is hosting a full day programming workshop f
 
 **14:15 – 15:15** : Analysis worksheet walkthrough. 
 
-**15:15 – 15:30** : Short break/Q+A 
+**15:15 – 15:30** : Coffee and tea break/Q+A 
 
 **15:30 – 16:30** : Create own data tidying/data analysis document (using previous material as reference). Can work with own data, or with a provided data set. 
 
