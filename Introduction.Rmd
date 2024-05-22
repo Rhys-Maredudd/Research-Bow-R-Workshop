@@ -12,11 +12,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse) # data tidying
 library(rstatix) # stats
-library(jtools)
-library(correlation)
+library(jtools) # preperation
+library(correlation) # correlation
 library(ggstats)
-library(palmerpenguins)
-library(plotly)
+library(palmerpenguins) # penguin dataset
+library(plotly) #interactie plots
 ```
 
 ## R Markdown
@@ -352,6 +352,7 @@ ggplot(anova_data,
 
 ```
 
+# Bonus extra (if time/brain energy)
 
 ## Regression analysis
 
