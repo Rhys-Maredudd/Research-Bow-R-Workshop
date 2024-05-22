@@ -10,9 +10,8 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
-library(DescTools)
-library(rstatix)
+library(tidyverse) # data tidying
+library(rstatix) # stats
 library(jtools)
 library(correlation)
 library(ggstats)
@@ -449,7 +448,7 @@ The `ggstats` package also allows us to directly compare our models through the 
 ## step 1 - create a list item of our models
 models <- list(
   "basic model" = model_1,
-  "second model"  = model_2,
+  "second model"  = model_2
 )
 
 ggcoef_compare(models) # All in one plot
