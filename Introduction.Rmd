@@ -296,9 +296,12 @@ summary(model)
 
 # Conducting post hoc analyses
 
-PostHocTest(model, 
-            method = "bonferroni", 
-            conf.level = 0.95, ordered = FALSE)
+emmeans_test(
+             data = anova_data, 
+             formula = flipper_length_mm ~ species,
+             p.adjust.method = "bonferroni",
+             detailed = TRUE
+             )
 ```
 
 ### Summary statistics.
