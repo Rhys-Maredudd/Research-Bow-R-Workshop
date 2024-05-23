@@ -43,12 +43,19 @@ Instead, it allows us to work with a copy of our data, which we can rename at a 
 
 Anyhow, back to uploading the data! Within R, we have 2 ways of doing this. The first is through the graphic interface, which we can find by clicking the table icon in the `environment` tab. The second is through coding. As I am lazy/"pragmatic", I tend to use the graphic interface for my initial uploading of the data, and then I copy and paste the generated code into my script. This allows me to quickly re-run my code in future sessions without having to navigate the folder system of my computer.
 
+If this is misbehaving/too tricky, we will use the url option below, that will read the file directly from github.
+
 ```{r}
 # Task 1 - Copy and paste your data upload script here. Call your uploaded data "df_raw". This will help us keep track of changes when we get to data cleaning later. 
 
 
 ```
 
+
+```{r url_method}
+df_raw <- read_csv(url("https://raw.github.com/Rhys-Maredudd/Research-Bow-R-Workshop/main/~survey_data.csv"))
+
+```
 ## Getting meta with the meta data
 
 Today we will be using a questionnaire-based study. The research was investigating the relationships between stressful life events, psychological distress and social support.
