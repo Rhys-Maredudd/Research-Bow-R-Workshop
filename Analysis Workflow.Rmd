@@ -29,7 +29,7 @@ Before cracking on with the second part of today's session, we are going to quic
 
 ```{r, echo=FALSE, message = FALSE, results= FALSE}
 #code to upload our newly saved file into R.
-df_tidy <- read_csv("~tidy_data.csv") %>% mutate(group = as.factor(group))
+df_tidy <- read_csv("https://raw.github.com/~tidy_data.csv") %>% mutate(group = as.factor(group))
 summary(df_tidy) 
 ```
 
