@@ -78,7 +78,7 @@ We have two options for using R in the workshop. We can either download and inst
 
 - Go to File > New Project> Version Control > Git 
 
-- Copy and Paste this repository URL [(https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main)](https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main)](https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main) as the Repository URL (The Project directory name will filled in automatically but you can change it if you want your folder in Notable to have a different name). 
+- Copy and Paste this repository URL [(https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main)](https://github.com/Rhys-Maredudd/Research-Bow-R-Workshop/tree/main) as the Repository URL (The Project directory name will filled in automatically but you can change it if you want your folder in Notable to have a different name). 
 
 - Decide where to locate the folder. By default, it will locate it in your home directory 
 
