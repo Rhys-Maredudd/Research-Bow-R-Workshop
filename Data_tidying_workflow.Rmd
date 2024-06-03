@@ -10,7 +10,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-install.packages("naniar")
+install.packages(c("naniar","tidyverse"))
 library(tidyverse)
 library(naniar) # Useful package for easy tools of working with missing data
 ```
