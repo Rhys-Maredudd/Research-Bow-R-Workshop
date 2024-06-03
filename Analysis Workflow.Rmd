@@ -9,9 +9,9 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-#install.packages("gtable")
-#install.packages("gtsummary")
-#install.packages("flextable")
+#install.packages(c("gtable","gtsummary", "flextable", "tidyverse",
+"correlation","gt", "psych", "rstatix", "flextable","jtools","modelsummary"  ))
+
 
 library(tidyverse) # data tidying
 library(correlation) # prepares nice correla
