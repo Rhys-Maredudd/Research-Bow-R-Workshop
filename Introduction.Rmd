@@ -10,6 +10,10 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+install.packages(c("tidyverse","DescTools","rstatix",
+                   "jtools","correlation","ggstats",
+                   "palmerpenguins","plotly" ))
+
 library(tidyverse) # data tidying
 library(rstatix) # stats
 library(jtools) # preperation
